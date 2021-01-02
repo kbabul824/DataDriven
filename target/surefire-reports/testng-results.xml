@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-01-02T13:30:55Z" name="BDD Test Suite" finished-at="2021-01-02T13:31:03Z" duration-ms="8516">
+    <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@5b12b668]" name="feature" class="MyRunner.TestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2021-01-02T13:30:55Z" name="FREE CRM Test" finished-at="2021-01-02T13:31:03Z" duration-ms="8516">
+      <class name="MyRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:MyRunner.TestRunner@5b12b668]" started-at="2021-01-02T13:30:55Z" name="setUpClass" finished-at="2021-01-02T13:30:55Z" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@5b12b668]" started-at="2021-01-02T13:30:55Z" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-01-02T13:31:03Z" duration-ms="8284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Verifying Login page functionality]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunner@5b12b668]" started-at="2021-01-02T13:31:03Z" name="tearDownClass" finished-at="2021-01-02T13:31:03Z" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- MyRunner.TestRunner -->
+    </test> <!-- FREE CRM Test -->
+  </suite> <!-- BDD Test Suite -->
+</testng-results>
