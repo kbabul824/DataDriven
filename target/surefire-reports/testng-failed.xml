@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite configfailurepolicy="continue" thread-count="1" parallel="tests" name="Failed suite [BDD Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="1" parallel="tests" name="FREE CRM Test(failed)" verbose="0">
+  <parameter name="pdfngreport-properties" value="C:\Users\babul\git\Cucumber-TestNG\pdfngreport.properties"/>
+  <listeners>
+    <listener class-name="com.uttesh.pdfngreport.PDFReportListener"/>
+  </listeners>
+  <test thread-count="1" parallel="tests" name="Contido cucumber(failed)" verbose="0">
     <classes>
       <class name="MyRunner.TestRunner">
         <methods>
-          <include name="feature"/>
+          <include name="feature" invocation-numbers="0"/>
           <include name="tearDownClass"/>
           <include name="setUpClass"/>
         </methods>
       </class> <!-- MyRunner.TestRunner -->
     </classes>
-  </test> <!-- FREE CRM Test(failed) -->
+  </test> <!-- Contido cucumber(failed) -->
 </suite> <!-- Failed suite [BDD Test Suite] -->
