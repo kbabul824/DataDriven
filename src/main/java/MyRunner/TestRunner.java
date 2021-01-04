@@ -22,7 +22,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
                 "json:target/cucumber-reports/CucumberTestReport.json",
                 "rerun:target/cucumber-reports/rerun.txt"
                 
-        },plugin = "json:target/cucumber-reports/CucumberTestReport.json"
+        },plugin = "json:target/cucumber-reports/CucumberTestReport.json",monochrome = true
         		)
 
 

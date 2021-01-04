@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import org.codehaus.plexus.util.Os;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -23,12 +24,20 @@ public class LoginStepDefinition {
 
 	@Given("^User Launches Chrome browser$")
 	public void user_Launches_Chrome_browser() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//drivers//chromedriver");
+		if(System.getProperty("os.name").contains("Windows 10")) {
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("headless");
 		options.addArguments("window-size=1200*600");
 		driver = new ChromeDriver();
 		
+		}else {
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//drivers//chromedriver");
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless");
+			options.addArguments("window-size=1200*600");
+			driver = new ChromeDriver();
+		}
 	}
 
 	@When("^User opens URL \"([^\"]*)\"$")
