@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="BDD Test Suite" verbose="1" parallel="tests"
 	thread-count="1" configfailurepolicy="continue">
+	<parameter name="pdfngreport-properties" value="C:\Users\babul\git\Cucumber-TestNG\pdfngreport.properties" />
+	<listeners>
+    <listener class-name="com.uttesh.pdfngreport.PDFReportListener" />
+  </listeners>
 	<test name="Contido cucumber" annotations="JDK"
 		preserve-order="true">
 		<classes>

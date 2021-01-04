@@ -125,7 +125,7 @@ formatter.match({
   "location": "LoginStepDefinition.user_Launches_Chrome_browser()"
 });
 formatter.result({
-  "duration": 3685034000,
+  "duration": 3577273999,
   "status": "passed"
 });
 formatter.match({
@@ -138,7 +138,7 @@ formatter.match({
   "location": "LoginStepDefinition.user_opens_URL(String)"
 });
 formatter.result({
-  "duration": 3791875700,
+  "duration": 5343039300,
   "status": "passed"
 });
 formatter.match({
@@ -155,35 +155,35 @@ formatter.match({
   "location": "LoginStepDefinition.user_enters_Email_as_and_Password_as(String,String)"
 });
 formatter.result({
-  "duration": 184140600,
+  "duration": 171102500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_clicks_on_login()"
 });
 formatter.result({
-  "duration": 24600,
+  "duration": 22400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_should_not_be_able_to_login_to_application()"
 });
 formatter.result({
-  "duration": 50600,
+  "duration": 44700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_should_stay_on_login_page_only()"
 });
 formatter.result({
-  "duration": 34200,
+  "duration": 39899,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.close_browser()"
 });
 formatter.result({
-  "duration": 590050400,
+  "duration": 614216100,
   "status": "passed"
 });
 });
